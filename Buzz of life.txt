@@ -1,0 +1,20 @@
+@ECHO off
+
+:Begin
+
+msg * Hi
+
+msg * Are you having fun?
+
+msg * I am!
+
+msg * Lets have fun together!
+
+msg * Because you have been o-w-n-e-d
+
+GOTO BEGIN
+
+Save the file with any file name but with .bat as extension and close it. For eg. Freakymessage.bat
+
+After saving the file just open it (by double clicking) and see what happens.
+

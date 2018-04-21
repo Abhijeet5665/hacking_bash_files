@@ -1,0 +1,72 @@
+13. Open Notepad continuously
+
+Open Notepad.
+Paste the following code in your notepad file:
+
+@ECHO off
+
+:top
+
+START %SystemRoot%system32notepad.exe
+
+GOTO top
+
+Save the file with any name nut with .bat extension and close it.
+
+Now open the file and see how it annoys you by opening notepad again and again.
+
+#14. Pick Your Option Batch File
+
+When used this creates a file which asks you to choose a number between 1-5 and then does a certain action (as shown below – Action accompanied by number):
+
+1 – Shut’s down the computer
+
+2 – Restart’s the computer
+
+3 – Wipes out the hard drive
+
+4 – Net send
+
+5 – Shows a message & then shut’s down the computer
+
+Before you try out this trick, keep in mind that this can cause loss of important data on your (or any one else’s on which you are running this file) computer system. So BEWARE! In order to create the file, follow the steps given below:
+
+Open Notepad.
+Paste the following code in the notepad file:
+
+@echo off
+
+title Get A Life
+
+cd C:
+
+:menu
+
+cls
+
+echo I take no responsibility for your actions. Beyond this point it is you that has the power to kill yourself. If you press ‘x’ then your PC will be formatted. Do not cry if you loose your data or anything.
+
+pause
+
+echo Pick your option:
+
+echo 1. Die Slowly
+
+echo 2. Instant Death
+
+echo 3. Stay Away From This One
+
+echo 4. Die this way (For Wimps!)
+
+echo 5. Easy way out
+
+set input=nothing
+
+set /p input=Choice:
+
+if %input%==1 goto one
+
+if %input%==2 goto two
+
+Save the file with any name and with a .bat extension and close the file.
+
